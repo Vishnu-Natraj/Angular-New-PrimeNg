@@ -1,0 +1,65 @@
+<div class="container">
+
+  <h5>Popup Date</h5>
+  <div class="row">
+
+    <div class="col">
+
+      <div class="p-fluid grid formgrid">
+        <div class="field col-12 md:col-4">
+          <label for="basic">Basic</label>
+          <p-calendar inputId="basic" [(ngModel)]="date1"></p-calendar>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="p-fluid grid formgrid">
+        <div class="field col-12 md:col-4">
+          <label for="dateformat">DateFormat</label>
+          <p-calendar [(ngModel)]="date2" dateFormat="mm-dd-yy" inputId="dateformat"></p-calendar>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="p-fluid grid formgrid">
+        <div class="field col-12 md:col-4">
+          <label for="icon">Icon</label>
+          <p-calendar [(ngModel)]="date3" [showIcon]="true" inputId="icon"></p-calendar>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="col">
+      <div class="p-fluid grid formgrid">
+        <div class="field col-12 md:col-4">
+          <label for="time">Time</label>
+          <p-calendar [(ngModel)]="date4" [showTime]="true" inputId="time"></p-calendar>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="p-fluid grid formgrid">
+        <div class="field col-12 md:col-4">
+          <label for="timeonly">Time Only</label>
+          <p-calendar [(ngModel)]="date5" [timeOnly]="true" inputId="timeonly"></p-calendar>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="p-fluid grid formgrid">
+        <div class="field col-12 md:col-4">
+          <label for="touchui">Touch UI</label>
+          <p-calendar [(ngModel)]="date6" [touchUI]="true" [readonlyInput]="true" inputId="touchui"></p-calendar>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
